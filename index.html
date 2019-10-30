@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+
+	<!--Added link to Reset Style-->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Added link to CSS Style-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>	
+	<!-- Top Part-->	
+	<div class="jumbotron">
+		<h3 class="text-center">Crystal Collector Game</h3>
+		<div class="text-center"><button type="button" class="btn btn-success" onclick="div_show()">How To Play</button>
+		</div> 
+	</div>
+<!-- Start Middle Part-->
+	<div class="container">
+		<!-- Start Games Instruction-->
+		<div id="howToplay" class="row">
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">How the Game Works:</h3>
+						</div>
+						<div class="alert alert-success">
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">At the start of the game - given a random number!</li>
+								<li class="list-group-item">Each of the 4 crystals below have been assigned a hidden number.</li>
+								<li class="list-group-item">By clicking on a crystal you will add a specific amount of points to "Your Crystal Count".</li>
+								<li class="list-group-item">Only WIN the game by matching when "Your Crystal Count" = "Random Crystal Number".</li>
+								<li class="list-group-item">If Crystal Count is higher than the random number - LOSE the game.</li>
+								<li class="list-group-item">Each time the game restarts - value of each crystal are never the same. Good Luck!</li>
+							</ul>
+							<div class="text-center"><button type="button" class="btn btn-success" onclick="div_show()">Close</button>
+							</div> 
+						</div>
+					</div>
+				</div>
+				
+		</div>
+		<!-- End Games Instruction-->
+		<div class="row">
+			<!--Random Crystal Number-->	
+			<div class="col-md-3 crystal-number-box"></div>	
+			<!--Your Crystal Count-->
+			<div class="col-md-3 score-number-box"></div>
+			<!--Win Lose-->			
+			<div class="col-md-3 win-lose-box"></div>		
+		</div>
+		<!--Start Crystal Images-->
+		<div class="row">
+			<div class="col-md-12 crystal-images"></div>
+		</div>
+		<!--End Crystal Images-->		
+	</div>
+	<!-- Start Middle Part-->
+	  <!-- Footer -->
+	  <div class="fixed-bottom">
+			<footer class="py-5 bg-dark">       
+			<p class="m-0 text-center text-white">Javascript-jquery-Bootstrap</p>
+			</footer>
+		</div>
+	<!-- Added link to Javascript-->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
