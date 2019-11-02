@@ -5,7 +5,7 @@ var crystalNumber = "";
 var wins = 0;
 var losses = 0;
 var counter = 0;
-var crystalImages = ["./assets/images/cr-Blue.png", "./assets/images/cr-red.png", "./assets/images/cr-yellow.png", "./assets/images/cr-brown.png"];
+var crystalImages = ["./assets/images/cr-blue.png", "./assets/images/cr-red.png", "./assets/images/cr-yellow.png", "./assets/images/cr-brown.png"];
 
 // Functions -Random Number
 
